@@ -17,6 +17,13 @@ const Container = styled.div`
   padding: 20px;
 `;
 
+type CartItem = {
+  id: number;
+  name: string;
+  price: number;
+  quantity: number;
+};
+
 const App: React.FC = () => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 

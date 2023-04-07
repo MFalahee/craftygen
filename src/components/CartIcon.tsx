@@ -1,5 +1,14 @@
 import React from "react";
+import styled from "styled-components";
 
+const Icon = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const CartItemsCount = styled.span`
+  margin-left: 4px;
+`;
 type CartIconProps = {
   cartItemsCount: number;
 };
